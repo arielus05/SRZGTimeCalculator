@@ -1,10 +1,9 @@
-# SRZGTimeCalculator
-## Sonic Riders: Zero Gravity Calculator
+# Sonic Riders: Zero Gravity Calculator
 made by arielus05
 
 ## the purpose:
-    - to make it a bit easier to add up all your track times for story mode and
-    - present the information in an easy and readable way
+- to make it a bit easier to add up all your track times for story mode and
+- to present the information in an easy and readable way
 
 ## instructions:
 1. extract SRZGTimeCalc.zip
