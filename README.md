@@ -16,7 +16,7 @@ made by arielus05
 2. every time the program is run, times.txt **resets** to being blank
 3. idk what else to add here :v
 
-## WIP/ideas for future implementation:
+## WIP/ideas:
 1. track time editing
 2. livesplit integration (read off screen to grab IGT that way)
 
