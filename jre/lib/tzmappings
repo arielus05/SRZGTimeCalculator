@@ -65,7 +65,6 @@ Central Pacific Standard Time:ZZ:Etc/GMT-11:
 Central Pacific Standard Time:001:Pacific/Guadalcanal:
 Central Standard Time:CA:America/Winnipeg:
 Central Standard Time:MX:America/Matamoros:
-Central Standard Time:ZZ:CST6CDT:
 Central Standard Time:001:America/Chicago:
 Central Standard Time (Mexico):001:America/Mexico_City:
 Chatham Islands Standard Time:001:Pacific/Chatham:
@@ -92,7 +91,6 @@ E. South America Standard Time:001:America/Sao_Paulo:
 Easter Island Standard Time:001:Pacific/Easter:
 Eastern Standard Time:BS:America/Nassau:
 Eastern Standard Time:CA:America/Toronto:
-Eastern Standard Time:ZZ:EST5EDT:
 Eastern Standard Time:001:America/New_York:
 Eastern Standard Time (Mexico):001:America/Cancun:
 Egypt Standard Time:001:Africa/Cairo:
@@ -160,7 +158,6 @@ Morocco Standard Time:EH:Africa/El_Aaiun:
 Morocco Standard Time:001:Africa/Casablanca:
 Mountain Standard Time:CA:America/Edmonton:
 Mountain Standard Time:MX:America/Ciudad_Juarez:
-Mountain Standard Time:ZZ:MST7MDT:
 Mountain Standard Time:001:America/Denver:
 Mountain Standard Time (Mexico):001:America/Mazatlan:
 Myanmar Standard Time:CC:Indian/Cocos:
@@ -178,7 +175,6 @@ North Korea Standard Time:001:Asia/Pyongyang:
 Omsk Standard Time:001:Asia/Omsk:
 Pacific SA Standard Time:001:America/Santiago:
 Pacific Standard Time:CA:America/Vancouver:
-Pacific Standard Time:ZZ:PST8PDT:
 Pacific Standard Time:001:America/Los_Angeles:
 Pacific Standard Time (Mexico):001:America/Tijuana:
 Pakistan Standard Time:001:Asia/Karachi:

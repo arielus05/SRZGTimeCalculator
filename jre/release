@@ -1,2 +1,2 @@
-JAVA_VERSION="23.0.2"
+JAVA_VERSION="24.0.1"
 MODULES="java.base"
