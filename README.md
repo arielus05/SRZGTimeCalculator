@@ -12,9 +12,7 @@ made by arielus05
 
 ## notes:
 1. this program is **open-source**
-    - **javadoc** (SRZGTimeCalc.html) documenting every field/method in the program if you are curious
-    - the **SRZGTimeCalc.java** ofc (source code)
-    - misc. stuff in the srcSRZGCalc folder
+2. the **javadoc** (SRZGTimeCalc.html) has every field/method documented in the program
 2. every time the program is run, times.txt **resets** to being blank
 3. idk what else to add here :v
 
