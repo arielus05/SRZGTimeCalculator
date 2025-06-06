@@ -12,7 +12,7 @@ made by arielus05
 3. follow instructions on command prompt
 
 ## notes:
-1. this program is **open-source** (SRZGTimeCalc.java)
+1. this program is **open-source**
     - **javadoc** (SRZGTimeCalc.html) documenting every field/method in the program if you are curious
     - the **SRZGTimeCalc.java** ofc (source code)
     - misc. stuff in the srcSRZGCalc folder
