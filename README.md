@@ -1,6 +1,6 @@
 # Sonic Riders: Zero Gravity Calculator
 made by arielus05
-
+**ONLY WORKS IN WINDOWS**
 ## the purpose:
 - to make it a bit easier to add up all your track times for story mode and
 - to present the information in an easy and readable way
