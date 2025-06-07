@@ -492,12 +492,37 @@ public class SRZGTimeCalc {
     }
     
     /**
-     * Prints some messages relevant to the user, then the program exits from runtime
+     * Prints some messages relevant to the user, then the program exits from runtime.
+     * helper method for rePromptStoryMode() and run()
      */
     private void quitProgram() {
     	System.out.println("All of the relevant data was written into times.txt.");
         System.out.println("Thanks for using SRZGTimeCalc :') -arielus05");
         System.exit(0);
+    }
+    
+    /**
+     * Prompts the user about whether they want to continue calculating story mode times or not.
+     * If the user selects 'y', the program continues/reruns.
+     * If not, the program terminates.
+     * helper method for run()
+     */
+    private void promptContinueCalculator() {
+        System.out.println("Would you like to calculate time for another story mode? (y/n)");
+        String response = input.nextLine().trim();
+
+        if (response.equalsIgnoreCase("n")) {	// user selects no
+        	quitProgram();
+        }
+        // user selects something other than "y" or "n"
+        else if (!response.equalsIgnoreCase("y")) {
+        	System.out.println("Invalid input! Program will now soon terminate.");
+        	quitProgram();
+        }
+        else {	// response == "y"
+        	resetFields();
+        	runCounter++;
+        }
     }
     
     /**
@@ -538,22 +563,7 @@ public class SRZGTimeCalc {
                     continue; // skip the yes/no prompt if invalid input
             }
             
-            // re-prompts user
-            System.out.println("Would you like to calculate time for another story mode? (y/n)");
-            String response = input.nextLine().trim();
-
-            if (response.equalsIgnoreCase("n")) {	// user selects no
-            	quitProgram();
-            }
-            // user selects something other than "y" or "n"
-            else if (!response.equalsIgnoreCase("y")) {
-            	System.out.println("Invalid input! Program will now soon terminate.");
-            	quitProgram();
-            }
-            else {	// response == "y"
-            	resetFields();
-            	runCounter++;
-            }
+            promptContinueCalculator();
         }
     }
     
