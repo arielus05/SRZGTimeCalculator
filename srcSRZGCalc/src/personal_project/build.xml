@@ -2,14 +2,6 @@
 <!-- Configuration of the Ant build system to generate a Jar file --> 
 <project name="srcSRZGCalc" default="CreateJar">
   <target name="CreateJar" description="Create Jar file">
-        <delete file="SRZGTimeCalc.jar"/>
-        <jar jarfile="SRZGTimeCalc.jar" basedir="bin/" includes="**/*.class **/Messages*.*" update="no">
-            <zipfileset dir="D:/Java/mylib" erroronmissingarchive="true">
-                <include name="*.jar" />
-            </zipfileset>  
-            <manifest>
-                <attribute name="Main-Class" value="some.package.and.app"/>
-            </manifest>             
-        </jar>
+        <jar jarfile="SRZGTimeCalc.jar" basedir="." includes="**/*.class" />
   </target>
 </project>
