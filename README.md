@@ -9,7 +9,7 @@ made by arielus05
 
 ## instructions:
 1. download the latest version of the program under the Releases tab (the zip file)
-1. extract SRZGTimeCalc.zip
+1. extract the zip file
 2. double click and run launch_program.bat
 3. follow instructions on command prompt
 
