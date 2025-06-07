@@ -1,7 +1,10 @@
 <?xml version="1.0" ?>
-<!-- Configuration of the Ant build system to generate a Jar file --> 
 <project name="srcSRZGCalc" default="CreateJar">
   <target name="CreateJar" description="Create Jar file">
-        <jar jarfile="../SRZGTimeCalc.jar" basedir="." includes="**/*.class" />
+    <jar jarfile="../SRZGTimeCalc.jar" basedir="bin" includes="**/*.class">
+      <manifest>
+      	<attribute name="Main-Class" value="personal_project.SRZGTimeCalc"/>
+      </manifest>
+    </jar>
   </target>
 </project>
