@@ -2,7 +2,7 @@
 made by arielus05
 
 ## WARNING:
-**THIS PROGRAM ONLY WORKS ON WINDOWS!!!**
+**THIS PROGRAM ONLY WORKS ON WINDOWS AT THE MOMENT!!!**
 ## the purpose:
 - to make it a bit easier to add up all your track times for story mode and
 - to present the information in an easy and readable way
