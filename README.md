@@ -6,6 +6,7 @@ made by arielus05
 - to present the information in an easy and readable way
 
 ## instructions:
+1. download the latest version of the program under the Releases tab
 1. extract SRZGTimeCalc.zip
 2. double click and run launch_program.bat
 3. follow instructions on command prompt
