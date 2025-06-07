@@ -1,15 +1,8 @@
 <?xml version="1.0" ?>
 <project name="SRZGTimeCalc" default="CreateJar">
 
-  <!-- Clean build directory and old jar -->
-  <target name="clean" description="Clean build and jar files">
-    <delete dir="bin"/>
-    <delete dir="doc"/>
-    <delete file="../SRZGTimeCalc.jar"/>
-  </target>
-
   <!-- Compile Java source files -->
-  <target name="compile" depends="clean" description="Compile .java files">
+  <target name="compile" description="Compile .java files">
     <mkdir dir="bin"/>
     <javac srcdir="src" destdir="bin" includeantruntime="false"/>
   </target>
@@ -27,8 +20,8 @@
       windowtitle="SRZGTimeCalc API" />
   </target>
 
-  <!-- Create runnable JAR file -->
-  <target name="CreateJar" depends="javadoc,compile" description="Create Jar file">
+  <!-- Create runnable JAR -->
+  <target name="CreateJar" depends="compile,javadoc" description="Create Jar file">
     <jar jarfile="../SRZGTimeCalc.jar" basedir="bin" includes="**/*.class">
       <manifest>
         <attribute name="Main-Class" value="personal_project.SRZGTimeCalc"/>
