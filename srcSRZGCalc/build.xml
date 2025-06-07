@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<project name="SRZGTimeCalc" default="CreateJar">
+
+  <!-- Compile Java source files -->
+  <target name="compile" description="Compile .java files">
+    <mkdir dir="bin"/>
+    <javac srcdir="src" destdir="bin" includeantruntime="false"/>
+  </target>
+
+  <!-- Generate Javadoc documentation and copy SRZGTimeCalc.html -->
+  <target name="javadoc" description="Generate API documentation">
+    <mkdir dir="doc"/>
+    <javadoc 
+      destdir="doc" 
+      sourcepath="src" 
+      packagenames="personal_project"
+      author="true" 
+      version="true" 
+      use="true" 
+      windowtitle="SRZGTimeCalc API" />
+    
+    <!-- Copy SRZGTimeCalc.html to the parent directory -->
+    <copy file="doc/personal_project/SRZGTimeCalc.html" tofile="../SRZGTimeCalc.html"/>
+  </target>
+
+  <!-- Create runnable JAR -->
+  <target name="CreateJar" depends="compile,javadoc" description="Create Jar file">
+    <jar jarfile="../SRZGTimeCalc.jar" basedir="bin" includes="**/*.class">
+      <manifest>
+        <attribute name="Main-Class" value="personal_project.SRZGTimeCalc"/>
+      </manifest>
+    </jar>
+  </target>
+
+</project>
