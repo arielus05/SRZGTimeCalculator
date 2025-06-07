@@ -8,16 +8,16 @@ made by arielus05
 - to present the information in an easy and readable way
 
 ## instructions:
-1. download the latest version under Releases (the zip file): https://github.com/arielus05/SRZGTimeCalculator/releases
-1. extract the zip file
-2. double click and run launch_program.bat
-3. follow instructions on command prompt
+1. download the latest version under Releases (the zip file)
+- https://github.com/arielus05/SRZGTimeCalculator/releases
+2. extract the zip file
+3. double click and run launch_program.bat
+4. follow instructions on command prompt
 
 ## notes:
 1. this program is **open-source**
 2. the **javadoc** (SRZGTimeCalc.html) has every field/method documented in the program
-2. every time the program is run, times.txt **resets** to being blank
-3. idk what else to add here :v
+3. every time the program is run, times.txt **resets** to being blank
 
 ## WIP/ideas:
 1. track time editing
