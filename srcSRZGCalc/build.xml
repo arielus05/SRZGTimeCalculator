@@ -19,17 +19,23 @@
       use="true" 
       windowtitle="SRZGTimeCalc API" />
     
-    <!-- Copy SRZGTimeCalc.html to the parent directory -->
     <copy file="doc/personal_project/SRZGTimeCalc.html" tofile="../SRZGTimeCalc.html"/>
   </target>
 
   <!-- Create runnable JAR -->
-  <target name="CreateJar" depends="compile,javadoc" description="Create Jar file">
+  <target name="CreateJar" depends="compile,javadoc,zipProject" description="Create Jar file">
     <jar jarfile="../SRZGTimeCalc.jar" basedir="bin" includes="**/*.class">
       <manifest>
         <attribute name="Main-Class" value="personal_project.SRZGTimeCalc"/>
       </manifest>
     </jar>
+  </target>
+
+  <!-- Zip parent directory, excluding .git -->
+  <target name="zipProject" description="Create a zip of the parent directory excluding .git and .github">
+    <zip destfile="../SRZGTimeCalc.zip">
+      <zipfileset dir=".." excludes=".git/**, .github/**, .gitignore, SRZGTimeCalc.zip"/>
+    </zip>
   </target>
 
 </project>
