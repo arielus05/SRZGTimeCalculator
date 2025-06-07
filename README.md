@@ -8,7 +8,7 @@ made by arielus05
 - to present the information in an easy and readable way
 
 ## instructions:
-1. download the latest version (the zip file): https://github.com/arielus05/SRZGTimeCalculator/releases
+1. download the latest version under Releases (the zip file): https://github.com/arielus05/SRZGTimeCalculator/releases
 1. extract the zip file
 2. double click and run launch_program.bat
 3. follow instructions on command prompt
