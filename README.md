@@ -1,6 +1,6 @@
 # Sonic Riders: Zero Gravity Calculator
 made by arielus05
-hello test
+
 ## IMPORTANT:
 **THIS PROGRAM ONLY WORKS ON WINDOWS AT THE MOMENT!!!**
 ## the purpose:
