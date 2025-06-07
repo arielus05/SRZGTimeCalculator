@@ -2,6 +2,6 @@
 <!-- Configuration of the Ant build system to generate a Jar file --> 
 <project name="srcSRZGCalc" default="CreateJar">
   <target name="CreateJar" description="Create Jar file">
-        <jar jarfile="srcSRZGCalc.jar" basedir="." includes="/.class" />
+        <jar jarfile="srcSRZGCalc.jar" basedir="." includes="**/*.class" />
   </target>
 </project>
