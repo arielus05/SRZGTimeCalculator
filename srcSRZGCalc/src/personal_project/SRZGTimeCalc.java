@@ -461,7 +461,7 @@ public class SRZGTimeCalc {
     }
     
     /**
-     * Writes relevant data to the times.txt text file.
+     * Writes relevant data to times.txt.
      * helper method for run()
      * @param storyString used as a parameter for getStoryModeTimes() to help what gets written into the file
      */
@@ -493,7 +493,7 @@ public class SRZGTimeCalc {
     
     /**
      * Prints some messages relevant to the user, then the program exits from runtime.
-     * helper method for rePromptStoryMode() and run()
+     * helper method for run()
      */
     private void quitProgram() {
     	System.out.println("All of the relevant data was written into times.txt.");
@@ -502,30 +502,79 @@ public class SRZGTimeCalc {
     }
     
     /**
-     * Prompts the user about whether they want to continue calculating story mode times or not.
-     * If the user selects 'y', the program continues/reruns.
-     * If not, the program terminates.
-     * helper method for run()
+     * Prompts the user about whether they want to modify a certain track's time or not.
+     * If the user selects 'y', the program runs modifyTrackTime().
+     * If the user selects 'n',, the program continues as normal.
+     * Else, the program asks again
      */
-    private void promptContinueCalculator() {
-        System.out.println("Would you like to calculate time for another story mode? (y/n)");
+    private void promptModifyTrackTime(String storyString) {
+    	System.out.println("Would you like to modify a track's time? (y/n)");
         String response = input.nextLine().trim();
 
-        if (response.equalsIgnoreCase("n")) {	// user selects no
-        	quitProgram();
+        if (response.equalsIgnoreCase("y")) {	// user selects yes
+        	selectTrackToModify(storyString);
         }
-        // user selects something other than "y" or "n"
-        else if (!response.equalsIgnoreCase("y")) {
-        	System.out.println("Invalid input! Program will now soon terminate.");
-        	quitProgram();
+        else if (response.equalsIgnoreCase("n")) {	// user selects no
+        	
         }
-        else {	// response == "y"
-        	resetFields();
-        	runCounter++;
+        else {	// user selects neither
+        	System.out.println("Invalid input! Please try again.");
+        	promptModifyTrackTime(storyString);
         }
     }
     
-    //test
+    private String selectTrackToModify(String storyString) {
+    	System.out.println();
+    	System.out.println("Select the track to modify:");
+    	
+    	return "";
+    }
+    
+    private String chooseStoryToModify() {
+    	System.out.println();
+    	System.out.println("The track is in which story mode?");
+        System.out.println("1 - Heroes Story");
+        System.out.println("2 - Babylon Story");
+        System.out.println();
+        
+        String response = input.nextLine().trim();
+
+        if (response.equals("1")) {	// user selects heroes story
+        	return "Heroes Story";
+        }
+        else if (response.equalsIgnoreCase("2")) {	// user selects babylon story
+        	return "Babylon Story";
+        }
+        else {	// user selects neither
+        	System.out.println("Invalid input! Please try again.");
+        	return chooseStoryToModify();
+        }
+    }
+    
+    /**
+     * Prompts the user about whether they want to continue calculating story mode times or not.
+     * If the user selects 'y', the program continues/reruns.
+     * If the user selects 'n', the program terminates.
+     * Else, the program asks again
+     * helper method for run()
+     */
+    private void continueCalculator() {
+        System.out.println("Would you like to calculate time for another story mode? (y/n)");
+        String response = input.nextLine().trim();
+
+        if (response.equalsIgnoreCase("y")) {	// user selects yes
+        	resetFields();
+        	runCounter++;
+        }
+        else if (response.equalsIgnoreCase("n")) {	// user selects no
+        	quitProgram();
+        }
+        else {	// user selects neither
+        	System.out.println("Invalid input! Please try again.");
+        	continueCalculator();
+        }
+    }
+    
     /**
      * Everything happening in the code ultimately gets printed from here.
      * Run directly by main method
@@ -564,7 +613,7 @@ public class SRZGTimeCalc {
                     continue; // skip the yes/no prompt if invalid input
             }
             
-            promptContinueCalculator();
+            continueCalculator();
         }
     }
     
