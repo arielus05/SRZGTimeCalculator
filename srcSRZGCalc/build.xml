@@ -14,7 +14,8 @@
       destdir="doc" 
       sourcepath="src" 
       packagenames="personal_project"
-      author="true" 
+      access="private"
+	  author="true" 
       version="true" 
       use="true" 
       windowtitle="SRZGTimeCalc API" />

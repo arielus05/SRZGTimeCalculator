@@ -461,7 +461,7 @@ public class SRZGTimeCalc {
     }
     
     /**
-     * Writes relevant data to times.txt.
+     * Writes relevant data to the times.txt text file.
      * helper method for run()
      * @param storyString used as a parameter for getStoryModeTimes() to help what gets written into the file
      */
@@ -492,63 +492,12 @@ public class SRZGTimeCalc {
     }
     
     /**
-     * Prints some messages relevant to the user, then the program exits from runtime.
-     * helper method for run()
+     * Prints some messages relevant to the user, then the program exits from runtime
      */
     private void quitProgram() {
     	System.out.println("All of the relevant data was written into times.txt.");
         System.out.println("Thanks for using SRZGTimeCalc :') -arielus05");
         System.exit(0);
-    }
-    
-    /**
-     * Prompts the user about whether they want to modify a certain track's time or not.
-     * If the user selects 'y', the program runs modifyTrackTime().
-     * If the user selects 'n',, the program continues as normal.
-     * Else, the program asks again
-     */
-    private void promptModifyTrackTime(String storyString) {
-    	System.out.println("Would you like to modify a track's time? (y/n)");
-        String response = input.nextLine().trim();
-
-        if (response.equalsIgnoreCase("y")) {	// user selects yes
-        	selectTrackToModify(storyString);
-        }
-        else if (response.equalsIgnoreCase("n")) {	// user selects no
-        	
-        }
-        else {	// user selects neither
-        	System.out.println("Invalid input! Please try again.");
-        	promptModifyTrackTime(storyString);
-        }
-    }
-    
-    private String selectTrackToModify(String storyString) {
-    	System.out.println();
-    	System.out.println("Select the track to modify:");
-    	
-    	return "";
-    }
-    
-    private String chooseStoryToModify() {
-    	System.out.println();
-    	System.out.println("The track is in which story mode?");
-        System.out.println("1 - Heroes Story");
-        System.out.println("2 - Babylon Story");
-        System.out.println();
-        
-        String response = input.nextLine().trim();
-
-        if (response.equals("1")) {	// user selects heroes story
-        	return "Heroes Story";
-        }
-        else if (response.equalsIgnoreCase("2")) {	// user selects babylon story
-        	return "Babylon Story";
-        }
-        else {	// user selects neither
-        	System.out.println("Invalid input! Please try again.");
-        	return chooseStoryToModify();
-        }
     }
     
     /**
