@@ -504,7 +504,7 @@ public class SRZGTimeCalc {
      * Prompts the user about whether they want to continue calculating story mode times or not.
      * If the user selects 'y', the program continues/reruns.
      * If the user selects 'n', the program terminates.
-     * Else, the program asks again
+     * Else, the program asks again.
      * helper method for run()
      */
     private void continueCalculator() {
