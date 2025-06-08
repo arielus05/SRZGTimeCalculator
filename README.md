@@ -27,4 +27,4 @@ i hope players find use in this program :D
 - ill add more functionality to this program in the future
 - **PLEASE** tell me if there are any errors/crashes/logic issues that occur while running the program
 - and also please give me tips/suggestions i will greatly appreciate them!
-### my discord (contact): arielus05
+### contact (discord): arielus05
