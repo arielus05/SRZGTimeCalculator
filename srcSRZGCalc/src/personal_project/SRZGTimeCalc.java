@@ -465,7 +465,7 @@ public class SRZGTimeCalc {
      * helper method for run()
      * @param storyString used as a parameter for getStoryModeTimes() to help what gets written into the file
      */
-    private void writeToTextFile(String storyString) {
+    private void writeToTimesTxt(String storyString) {
     	String fileName = "times.txt";
     			
     	try (PrintWriter writer = new PrintWriter(new FileWriter(fileName, true))) {
@@ -593,17 +593,17 @@ public class SRZGTimeCalc {
                 case 1:		// heroes story
                 	System.out.println();
                 	System.out.println(getStoryModeTimes("Heroes Story"));
-                    writeToTextFile("Heroes Story");
+                	writeToTimesTxt("Heroes Story");
                     break;
                 case 2:		// babylon story
                 	System.out.println();
                 	System.out.println(getStoryModeTimes("Babylon Story"));
-                    writeToTextFile("Babylon Story");
+                	writeToTimesTxt("Babylon Story");
                     break;
                 case 3:		// all stories
                 	System.out.println();
                 	System.out.println(getStoryModeTimes("All Stories"));
-                    writeToTextFile("All Stories");
+                	writeToTimesTxt("All Stories");
                     break;
                 case 4:		// quit
                 	System.out.println("The user chose to quit.");
