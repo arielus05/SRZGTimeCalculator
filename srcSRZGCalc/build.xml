@@ -7,7 +7,7 @@
     <javac srcdir="src" destdir="bin" includeantruntime="false"/>
   </target>
 
-  <!-- Generate Javadoc documentation and copy SRZGTimeCalc.html -->
+  <!-- Generate Javadoc documentation -->
   <target name="javadoc" description="Generate API documentation">
     <mkdir dir="doc"/>
     <javadoc 
